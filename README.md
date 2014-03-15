@@ -21,13 +21,15 @@ build PHP:
 
     sudo ./configure --enable-pcntl && make
 
-NOTE: I did not install this version, if you want to issue this command instead: `sudo ./configure --enable-pcntl && make install`
+NOTE: I did not install this version, if you want to both build and install, issue this command instead: 
 
-Also it seams to be a common problem (Debian and Fedora) that the PHP configure script complains about a missing libxml so file. If you run into that issue have a look at this <a href="http://ubuntuforums.org/showthread.php?t=836133">thread</a>. 
+    sudo ./configure --enable-pcntl && make install
+
+Also, it seams to be a common problem (Debian and Fedora) that the PHP configure script complains about a missing libxml so file. If you run into that issue have a look at this <a href="http://ubuntuforums.org/showthread.php?t=836133">thread</a>. 
 
 The solution should be similar with yum:
 
-    yum search available | grep libxml
+    yum list available | grep libxml
     yum install libxml2-dev
 
 After you have installed the xmllib rebuild PHP.
