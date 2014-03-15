@@ -27,8 +27,8 @@ Also it seams to be a common problem (Debian and Fedora) that the PHP configure 
 
 The solution should be similar with yum:
 
-    yum search available | grep libxmlyum
-    install libxml2-dev
+    yum search available | grep libxml
+    yum install libxml2-dev
 
 After you have installed the xmllib rebuild PHP.
 
@@ -36,6 +36,6 @@ If you are interested in learning more about forking in PHP check out these reso
 
 <a href="http://www.youtube.com/watch?v=FU_GZF5YLuI">PHPNW12 Sunday Track 2 Talk 3: Nathanial McHugh - Fork It! Parallel Processing In PHP</a>
 
-<a href="https://github.com/natmchugh">Nathaniel McHugh's PHP-Fractals and phploc repos</a>
+<a href="https://github.com/natmchugh">Nathaniel McHugh PHP-Fractals and phploc repos</a>
 
 <a href="http://ca1.php.net/manual/en/book.pcntl.php"The PCNTL Documentation</a>
