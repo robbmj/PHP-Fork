@@ -38,4 +38,4 @@ If you are interested in learning more about forking in PHP check out these reso
 
 <a href="https://github.com/natmchugh">Nathaniel McHugh PHP-Fractals and phploc repos</a>
 
-<a href="http://ca1.php.net/manual/en/book.pcntl.php"The PCNTL Documentation</a>
+<a href="http://ca1.php.net/manual/en/book.pcntl.php">The PCNTL Documentation</a>
