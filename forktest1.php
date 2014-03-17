@@ -1,4 +1,4 @@
-#! /home/robbmi/myprograms/php/phpbuild/php-5.4.26/sapi/cli/php -q
+#! /home/robbmi/myprograms/php/cli/phpbuild/php-5.4.26/sapi/cli/php -q
 <?php
 
 declare(ticks = 1);
@@ -31,6 +31,9 @@ function main() {
 		}
 	}
 
+	// FIXME: if the child process dies before the parent process has
+        //  pushed the pid onto the child_pids array we end up in
+        //  in an infinite loop.
 	while (count($child_pids) > 0);
 
 	echo "parrent process: all jobs done!\n";
